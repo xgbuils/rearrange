@@ -1,7 +1,7 @@
 {
   "name": "array-reorder",
   "version": "0.1.0",
-  "description": "function that given a changes configuration Map and an array, it creates a new array with reordered positions",
+  "description": "function that given a movements configuration Map and an array, it creates a new array with reordered positions",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run test-only && npm run check",

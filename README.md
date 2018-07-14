@@ -15,8 +15,6 @@ npm install array-reorder --save
 
 ## Usage
 
-There are several assertions with strings like:
-
 ``` JavaScript
 const arrayReorder = require('array-reorder')
 
