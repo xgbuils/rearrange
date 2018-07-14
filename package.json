@@ -1,0 +1,45 @@
+{
+  "name": "array-reorder",
+  "version": "0.1.0",
+  "description": "function that given a changes configuration Map and an array, it creates a new array with reordered positions",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run test-only && npm run check",
+    "test-only": "tape test.js",
+    "test-ci": "npm run lint && npm run check && npm run coveralls",
+    "coveralls": "npm run cov && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "cov": "nyc --reporter=lcov --require babel-register npm run test-only && nyc report",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "check": "npm-check -i pre-commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgbuils/transform-iterable.git"
+  },
+  "keywords": [
+    "reorder",
+    "rearrange",
+    "array",
+    "partial"
+  ],
+  "author": "Xavier Garcia Buils <xgbuils@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgbuils/array-reorder/issues"
+  },
+  "homepage": "https://github.com/xgbuils/array-reorder#readme",
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "coveralls": "^3.0.1",
+    "eslint": "^5.1.0",
+    "npm-check": "^5.7.1",
+    "nyc": "^12.0.2",
+    "pre-commit": "^1.2.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.0"
+  },
+  "pre-commit": {
+    "run": "test"
+  }
+}

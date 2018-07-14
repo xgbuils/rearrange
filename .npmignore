@@ -1,0 +1,10 @@
+node_modules
+coverage
+.coverdata/
+.coverrun
+.coveralls.yml
+*.log
+.travis.yml
+.eslintrc.json
+.eslintignore
+test
